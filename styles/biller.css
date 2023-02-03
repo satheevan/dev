@@ -1,0 +1,14 @@
+@import url("./variables.css");
+
+
+.table{
+    width: 70%;
+   
+}
+thead{
+    background-color:blueviolet;
+    color: white;
+}
+thead,tbody{
+    padding: 10px;
+}
