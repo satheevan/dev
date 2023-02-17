@@ -1,0 +1,9 @@
+[ 
+    {"Item_name":"tea","Description":"normal","Status":1,"rate":10},
+    {"Item_name":"coffee","Description":"normal","Status":1,"rate":15},
+    {"Item_name":"lemontea","Description":"normal","Status":1,"rate":10},
+    {"Item_name":"blacktea","Description":"normal","Status":1,"rate":10},
+    {"Item_name":"tomato rice","Description":"normal","Status":1,"rate":35},
+    {"Item_name":"lemon rice","Description":"normal","Status":1,"rate":35},
+    {"Item_name":"vegetable rice","Description":"normal","Status":1,"rate":35}
+]

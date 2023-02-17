@@ -1,14 +1,109 @@
 @import url("./variables.css");
 
-
-.table{
-    width: 70%;
-   
+:root{
+    --primecolor:var(--primary-color);
+    --scondarycolor:#ffffff;
+    --left:5px;
+    --mainwidth:100vw;
+    --lefttablewidth:60vw;
+    --mobile:425px;
 }
-thead{
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ----------------------------------------------------------------------------------------- */
+/* 
+.text_box{
+    
+    margin:var(--left);
+}
+.text_box input{
+    display: inline;
+    border: none;
+    padding: 4px; 
+
+}
+.text_box input:active{
+    border: none;
+}
+
+.search_container{
+    display: inline;
+    border: 1px solid black;
+    padding: 5px 0px;
+    
+} */
+.text_box{
+    display: flex;
+    width: var(--mainwidth);
+    margin: var(--left);
+}
+.text_box em{
+    margin-top: 5px;
+}
+.search_container{
+    display: flex;
+    margin: var(--left);
+    border: 1px solid black;
+}
+.search_container input{
+    border: none;
+    margin: 0;
+    padding: 2px;
+}
+.search_container i{
+    margin-top:5px;
+}
+#item{
+    color:var(--scondarycolor);
+    margin: 1px;
+}
+
+/* --------------------------------------------------------------------------------------- */
+/* bill details container */
+.billdetail_container{
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-between;
+}
+/* --------------------------------------------------------------------------------------- */
+.tableinput{
+    display: flex;
+    width:var(--mainwidth);
+    
+}
+.tableinput div{
+    margin: var(--left);
+}
+/*Left table*/
+.leftside{
+    width:var(--lefttablewidth);
+    background-color: var(--primecolor);
+}
+.leftsidetable {
+    border-right: 1px solid black;
+    width:var(--lefttablewidth);
+}
+
+.leftsidetable thead{
     background-color:blueviolet;
     color: white;
+    
 }
-thead,tbody{
-    padding: 10px;
+.leftsidetable thead,tbody,tr{
+    padding:0;
+    
 }
+/*right table*/
+.rightside{
+    width:calc(var(--mainwidth) - var(--lefttablewidth));
+    background-color:var(--second-color);
+    padding:0 ;
+}
+/* .rightsidetable{
+    
+}
+.rightsidetable tr,th,td{
+    
+} */

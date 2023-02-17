@@ -15,9 +15,8 @@
   <link rel="stylesheet" href="./styles/biller.css">
   <!-- icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <!-- script -->
-  
-  <title>Biller</title>
+
+  <title>Fincords</title>
 </head>
 
 <body>
@@ -46,21 +45,14 @@
     <br>
     <div class="text_box">
       <em>Enter Items </em>
-      <div id="search_container" class="search_container"><i class='bx bx-search'></i><div id="selection"></div></div>
+      <div class="search_container"><i class='bx bx-search'></i><input type="search" size="100"></div>
       <button id="item" class="btn btn-primary">Submit</button>
-      <button id="item" class="btn btn-primary" onclick="location.href='index.html'">back</button>
     </div>
     <hr>
-    <div class="billdetail_container">
-      <div class="left">
-        <h5>Customer:<input type="text" value="B2C" size="10"></h5>
-        <h5>Bill No:<input type="text" size="10" value="ch00"></h5>
-        <h5>Date:<input type="date"></h5>
-      </div>
-      <div class="right">
-        <h5>Mobile No:<input type="number" size="10" maxlength="10"></h5>
-      </div>
-    </div>
+    <div><div></div></div></div>
+    <h5>Customer:<input type="text" value="B2C" size="10"></h5>
+    <h5>Bill No:<input type="text" size="10" value="ch00"></h5>
+    <h5>Date:<input type="date"></h5>
     <hr>
     <!-- table contant -->
 
@@ -80,15 +72,15 @@
           <tbody class="table-group-divider">
             <tr>
               <th scope="row">1</th>
-              <td class="iteminput"></td>
+              <td id="iteminput">tea</td>
               <td><input type="text"></td>
-              <td><input type="text" id="qty" size="5"></td>
-              <td id="rate">10</td>
-              <td id="itemvalue"></td>
+              <td><input type="text" size="5"></td>
+              <td>10</td>
+              <td id="itemvalue">50</td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td class="iteminput">coffee</td>
+              <td id="iteminput">coffee</td>
               <td><input type="text"></td>
               <td><input type="text" size="5"></td>
               <td>15</td>
@@ -96,7 +88,7 @@
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td class="iteminput">buttermilk</td>
+              <td id="iteminput">buttermilk</td>
               <td><input type="text"></td>
               <td><input type="text" size="5"></td>
               <td>10</td>
@@ -104,7 +96,7 @@
             </tr>
             <tr>
               <th scope="row">4</th>
-              <td class="iteminput">samosa</td>
+              <td id="iteminput">samosa</td>
               <td><input type="text"></td>
               <td><input type="text" size="5"></td>
               <td>10</td>
@@ -205,9 +197,6 @@
 
       </div>
     </div>
-
-    <script src="./ruddb.js"></script>
-    <script src="./js/biller.js"></script>    
 </body>
 
 </html>
